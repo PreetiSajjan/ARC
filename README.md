@@ -30,6 +30,60 @@ A "grid" is a rectangular matrix (list of lists) of integers between 0 and 9 (in
 
 When looking at a task, a test-taker has access to inputs & outputs of the demonstration pairs, plus the input(s) of the test pair(s). The goal is to construct the output grid(s) corresponding to the test input grid(s), using 3 trials for each test input. "Constructing the output grid" involves picking the height and width of the output grid, then filling each cell in the grid with a symbol (integer between 0 and 9, which are visualized as colors). Only *exact* solutions (all cells match the expected answer) can be said to be correct.
 
+## Project Structure
+The project structure is as below,
+- `apps`
+- `data`
+- `src`
+   -  `utils`
+ 
+1) src folder contains solutions to all 6 tasks 
+2) utils folder contains a single file named common_utilities.py, which consists of method to read json file.
+
+## Source Code
+The `src` directory consists of hand written python code for three of the tasks namely.
+1. `25d8a9c8.json`
+2. `2dee498d.json`
+3. `d631b094.json`
+4. `c59eb873.json`
+5. `3ac3eb23.json`
+6. `d10ecb37.json`
+ 
+## Usage of Command line Interface(CLI)
+Open CLI inside `src` folder and execute the following commands to run the solutions,
+
+##### Excecution commands for all the tasks
+
+1. `python Solution_25d8a9c8.py (training/evaluation)/jsonfile.json`
+2. `python Solution_2dee498d.py (training/evaluation)/jsonfile.json`
+3. `python Solution_d631b094.py (training/evaluation)/jsonfile.json`
+4. `python Solution_c59eb873.py (training/evaluation)/jsonfile.json`
+5. `python Solution_3ac3eb23.py (training/evaluation)/jsonfile.json`
+6. `python Solution_d10ecb37.py (training/evaluation)/jsonfile.json`
+
+## Image for all 6 tasks (1 input & output each)
+`Task 1:`
+![task 1](/apps/img/preeti1.png)
+
+`Task 2:`
+![task 2](/apps/img/preeti2.png)
+
+`Task 3:`
+![task 3](/apps/img/sampritha1.png)
+
+`Task 4:`
+![task 4](/apps/img/sampritha2.png)
+
+`Task 5:`
+![task 5](/apps/img/swati1.png)
+
+`Task 6:`
+![task 6](/apps/img/swati2.png)
+
+## Summary
+1. Each json file is read into the respective `Solution.py` file through command prompt. 
+2. `solve` method processes these json inputs and generates output based on the logic written (logics are written by understanding the json files in testing interface).
+3. As part of validation, whole `training` and `testing data` set is passed in the Solution from both `evaluation` and `training` folder.
 
 ## Usage of the testing interface
 
